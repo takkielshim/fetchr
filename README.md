@@ -9,9 +9,8 @@ $) mkdir <base_directory>
 
 $) python fetchr_train.py -input <base_directory> -skip true 
 
-# if you already downloaded data-set then set '-skip' to 'false' 
-
-# this code generates several files in <base_directory>
+if you already downloaded data-set then set '-skip' to 'false' 
+this code generates several files in <base_directory>
 
 - preprocessed_data: succssfully pre-processed data-set and these are the inputs to the training.
 - preprocessed_err_data: error samples such as missing delivered coordinates and so on.
@@ -29,7 +28,7 @@ $) python fetchr_train.py -input <base_directory> -skip true
 
 $) python fetch_predict.py -input <base_directory> -data <sample_data>
 
-# this code generates the file 'prediction_result' in <base_directory>
+this code generates the file 'prediction_result' in <base_directory>
 - prediction_result:
   . first column: <customer_name>_<customer_phone>
   . second_column: predicted coordinates
